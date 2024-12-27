@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logo Section -->
+    <header class="logo-header">
+        <h2 class="logo">SPBuilder</h2>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="main-container">
+        
+        <!-- Left Menu Section -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="stimuli.html">Set Your Stimuli Pool</a></li>
+                <li><a href="priming.html">Priming</a></li>
+                <li><a href="trial.html">Design Your Trial Flow</a></li>
+                <li><a href="preview.html">Preview Your Trial</a></li>
+                <li><a href="load.html">Load/Save Your Design</a></li>
+                <li><a href="analyze.html">Analyze Your Data</a></li>
+            </ul>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h1>Design Your Trial Flow</h1>
+   
+
+            <h2>Trial Flow</h2>
+            <p>
+               Our trial flow design has two modes: simple and advanced. <br>
+               Simple mode is easier to implement when you only need to have one stimuli on each page with three pages in total (e.g. IAT)
+               and you don't need in-page logic. 
+            </p>
+
+            <h2>Simple Trial Flow</h2>
+            <div class="picture">
+                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_0Dswmcgg7WyqbOv" 
+                     alt="trial" width="800" height="400">
+            </div>
+
+            <p>
+                <b>Trial Timeline</b>
+                You can set the time you want each stimuli to show. 
+                For stimuli 3, it's typical the page awaiting for particiapnts to respond. You can set both Delay before keyboard and Delay after keybaord  <br>
+                <b>Allowed Input Keys</b>
+                You can set the key inputs allowed for partcipants (e.g., in IAT, let K = "plesant", D="unpleasant") <br>
+                <b>Auto Proceed to next trail after timeout</b>
+                When you enable this button, it will not wait for paticipant's key responses and move to the next trial.  <br>
+            </p>
+
+                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_cnWrn80KtDgQYZB" 
+                     alt="trial" width="600" height="400">
+
+
+            <h2>Advanced Trial Flow</h2>
+            <p>
+                <b>Page Layout</b>
+                You can design how you want the page to look, it's especially effective for experiments that need two different types of stimuli to show at the same time. 
+                You can add stimuli shown on the page by clicing "+" on the right side and "+" on the bottom  <br>
+                 <b>Go to next page when </b>
+                 Here we give three possibilities for researcher to choose <br>
+                 After fixed duration which is used for basic functioning of intermediate pages, <br>
+                 Keyboard response which is used for recording the keyboard responses participants make,  <br>
+                 Mouse click response which is used for mouse tracking <br>
+                <b>Swap Display</b>
+                When you enable this button, it will randomly swap the positions of the stimuli.  <br>
+                <b> Between Page Design</b> <br>
+                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_AJfN81u2TEYzV8G" 
+                     alt="trial" width="700" height="400"> <br>
+                
+                After click add page, you can set up both the interval between pages and the in-page logic (the little branch). <br>
+                <b> In-page Logic</b> <br>
+                This button is useful when you want to show this page depending on the results from the frist page's response. <br>
+                For instance, in IAT, we want to give feedback for participants given their responses to different stimuli. 
+                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_7QO7uG1vOCusKCp" 
+                     alt="trial" width="700" height="300"> <br>
+                We can set we want this page to show when the response of Page# is/isnot correct keyboard response. <br> 
+                Moreover, we can also set this page to show when the selected pool of Page# is/isnot which pool. <br>
+                We can also set the logic of these conditions by setting whether you want these conditions to be met the same time (AND) or only one needs to be met (OR). 
+
+
+            </p>
+
+            <h2>Set Number of Trials and Rounds</h2>
+            <p>
+                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_gO1NcK5OyvpDLoc" 
+                     alt="trial" width="400" height="100"> <br>
+                After having designed one trial, it's time to decide how many trials you want in total and how many rounds you want. <br>
+                <b>Number of total trials</b> Make sure the number of total trials don't excced any of your stimuli counts in one stimuli pool. <br>
+                For instance, if you have four stimuli with 5 counts each in stimuli pool 1, your total countrs of trials can't exceed 20 <br>
+                <b>Add more rounds</b> When you want another copy of one round, just enable this button. <br>
+                Notice that: when you embed this survey into qualtrics, you need to add another copy of our design block to have another round. 
+
+            </p>
+
+
+
+            
+        </div>
+    </div>
+</body>
+</html>

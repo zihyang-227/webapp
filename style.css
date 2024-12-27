@@ -1,0 +1,84 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section (5% of height) */
+.logo-header {
+    height: 5vh;
+    width: 100%;
+    background-color: #7bc0e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Main Container Layout (95% of height below logo) */
+.main-container {
+    display: flex;
+    height: 95vh;
+}
+
+/* Menu Section (15% width) */
+.menu {
+    width: 15%;
+    background-color: #43a5e2;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #e52521;
+}
+
+/* Content Section (85% width) */
+.content {
+    width: 85%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
