@@ -28,37 +28,23 @@
         <!-- Content Section -->
         <div class="content">
             <h1>Prime Your Stimuli</h1>
-            
-            <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_9WMHctWq3xSoDQU" 
-                     alt="Priming" width="1000" height="400">
-            </div>
 
             <h2>Overview of Priming</h2>
             <p>
                 The “Priming” function is a powerful function of the SP-Builder designated for researchers who need to set up a selected item (e.g., target or control item). 
                 For example, as a common practice in psychology research, researchers in many sequential priming paradigms need a target item to compare with a control stimulus for their research purpose.
             </p>
+            <div class = "picture_container">
+                <img src="/assets/priming.gif" id = "small_picture"/>
+              </div>
 
             <h2>Set Up Your Target/Control Stimuli</h2>
-            <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_MnCew1ovpaP1IsB" 
-                     alt="Priming" width="700" height="300">
-            </div>
             <p>
                You need to first click Add Priming Stimulus <br>
             </p>
-            <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_etuinhnbaMVBVRA" 
-                     alt="Priming" width="800" height="200">
-            </div>
             <p>
                 Give the name for your target stimuli in "Name", and add the stimuli pool to choose from in "Included items" <br>
              </p>
-             <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_FwVNk72tqkXs6mS" 
-                     alt="Priming" width="800" height="200">
-            </div>
              <p>
                 And then click add priming stimulus again to set your control stimuli, where you can exclude target stimuli in "Excluded items"
                 <br>
@@ -70,6 +56,26 @@
 
             </p>
         </div>
+
+        <footer class="site-footer">
+            <p>
+              Contact Support:
+              <a href="mailto:spbuilder.team@gmail.com">spbuilder.team@gmail.com</a>
+            </p>
+          </footer>
     </div>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.menu ul li a');
+          menuLinks.forEach(link => {
+            // Compare the link's href with the current URL
+            if (link.href === window.location.href) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
 </body>
 </html>

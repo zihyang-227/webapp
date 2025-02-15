@@ -29,18 +29,39 @@
         <div class="content">
             <h1>Load/Save Your Design</h1>
             
-            <div class="picture">
+            <div class="picture_container">
                 <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_fcNh9PrNVQ1uDkq" 
-                     alt="Priming" width="800" height="300">
+                     alt="Priming" width="700" height="300">
             </div>
 
             <h2>Load, Save</h2>
             <p>
-                <b>Load</b>When you click load, it will generate JSON file for you. 
+                <b>Load</b>When you click load, it will generate JSON file for you. <br>
                 <b>Save</b>When you click save, it will allow you to upload JSON file. 
                 </p>
         
         </div>
+
+        <footer class="site-footer">
+            <p>
+              Contact Support:
+              <a href="mailto:spbuilder.team@gmail.com">spbuilder.team@gmail.com</a>
+            </p>
+          </footer>
     </div>
+
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.menu ul li a');
+          menuLinks.forEach(link => {
+            // Compare the link's href with the current URL
+            if (link.href === window.location.href) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
 </body>
 </html>

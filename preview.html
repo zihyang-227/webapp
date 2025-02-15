@@ -28,25 +28,46 @@
         <!-- Content Section -->
         <div class="content">
             <h1>Preview your trial design</h1>
-            
-            <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_1YgPs9cZzniSbuT" 
-                     alt="Priming" width="800" height="400">
-            </div>
 
-            <h2>Trial block Html</h2>
+            <h2>Trial Block HTML</h2>
             <p>
-                <b>Content width, Content height, Blank space above content</b> Here you can adjust the image's height and width and the blank space above the image. <br>
-                <b>Dark Mode</b> Dark Mode will turn the screen into black with text in white. <br>
-                <b>Text Stimuli Style / Instruction Text</b> You can set up the insturction text you want to show to the participants such as instructions for IAT throughout the experiment and you can adjust the color/font/size of it. <br> 
+                <b>Content width & Content height <br></b>
+                <div class = "picture_container">
+                  <img src="/assets/width_height.gif" width = 550px height = 400px />
+                </div>
+                <p>Here you can adjust the width and height of your picture stimuli by viewing it on Preview. </p>
+                <br>
+                <b>Blank space above content </b> 
+                <div class = "picture_container">
+                  <img src="/assets/blank_space.gif" width = 550px height = 400px/>
+                </div>
+                <p>Here you can adjust the blank space above your stimuli by viewing it on Preview. </p>
+                <br>
+
+                <b>Dark Mode</b> 
+                <div class = "picture_container">
+                  <img src="/assets/dark mode.gif" width = 550px height = 400px/>
+                </div>
+                <p>Here you can turn the preview mode into black background. </p>
+                <br>
+                <b>Text Stimuli Style</b> 
+                <div class = "picture_container">
+                  <img src="/assets/text.gif" width = 550px height = 400px/>
+                </div>
+                <p>Here you can adjust the size, bold or not, font color, wrap or not for your text stimuli </p>
+                <br>
+                <b>Instruction Text</b>
+                <div class = "picture_container">
+                  <img src="/assets/instruction.gif" width = 550px height = 400px/>
+                </div>
+                <p>Here you can set up your instruction text. </p>
 
             </p>
 
            
             <h2>Save your qsf file for Qualtrics</h2>
-            <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_LNZENLsaDfcyUxY" 
-                     alt="Priming" width="300" height="60">
+            <div class = "picture_container">
+              <img src="/assets/qsf.gif" width = 300px height = 100px/>
             </div>
             <p>
                 On the bottom of our website, there is a button for you to click to dowloard a version of qsf file, which allows you to upload it to embed in Qualtrics design. 
@@ -56,6 +77,26 @@
 
 
         </div>
+
+        <footer class="site-footer">
+            <p>
+              Contact Support:
+              <a href="mailto:spbuilder.team@gmail.com">spbuilder.team@gmail.com</a>
+            </p>
+          </footer>
     </div>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.menu ul li a');
+          menuLinks.forEach(link => {
+            // Compare the link's href with the current URL
+            if (link.href === window.location.href) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
 </body>
 </html>

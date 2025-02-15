@@ -25,21 +25,64 @@
                 <li><a href="analyze.html">Analyze Your Data</a></li>
             </ul>
         </div>
+        <div class = "content">
 
-        <!-- Content Section -->
-        <div class="content">
             <h1>Overview of SP Builder</h1>
-            <p>
-                This user tutorial aims to help you understand how to use our SP Builder to build an experiment from scratch.
-                <br> We suggest opening a task builder tab to follow our guide step-by-step.
-                <br> We will teach you how to:
-                <br> 1. Set up your stimuli pool
-                <br> 2. Prime your stimuli pool
-                <br> 3. Design your trial flow
-                <br> 4. Load/Save your design
-                <br> 5. Analyze your data
-            </p>
-        </div>
+            <p>Sequential Priming Builder (SP Builder) is a web application designed to help researchers create advanced online behavioral experiments without needing programming skills. 
+                It specializes in programming sequential priming tasks, such as the Affective Misattribution Procedure.</p>
+
+
+                 <!-- Two-Column Layout -->
+                 <div class="two-column">
+                    <div class="column">
+                        <div class="step">
+                            <image src = "Assets/Stimuli.png" width = 60px height = 60px></image>
+                            <p><strong>Set up your stimuli pool</strong><br>Prepare and organize your stimuli.</p>
+                        </div>
+                        <div class="step">
+                            <image src = "Assets/Priming_1.png" width = 60px height = 60px></image>
+                            <p><strong>Prime your stimuli pool</strong><br>Define conditions for priming.</p>
+                        </div>
+                        <div class="step">
+                            <image src = "Assets/SurveyFlow.png" width = 60px height = 60px></image>
+                            <p><strong>Design your trial flow</strong><br>Structure how the experiment runs.</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="step">
+                            <image src = "Assets/downlaod.png" width = 60px height = 60px></image>
+                            <p><strong>Load/Save your design</strong><br>Save your progress for future edits.</p>
+                        </div>
+                        <div class="step">
+                            <image src = "Assets/analysis-.png" width = 60px height = 60px></image>
+                            <p><strong>Analyze your data</strong><br>View and interpret experiment results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="site-footer">
+                <p>
+                  Contact Support:
+                  <a href="mailto:spbuilder.team@gmail.com">spbuilder.team@gmail.com</a>
+                </p>
+              </footer>
     </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.menu ul li a');
+          menuLinks.forEach(link => {
+            // Compare the link's href with the current URL
+            if (link.href === window.location.href) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
+
+  
+    
 </body>
 </html>

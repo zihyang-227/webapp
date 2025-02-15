@@ -29,13 +29,11 @@
         <!-- Content Section -->
         <div class="content">
             <h1>Set Up Your Stimuli</h1>
-            
-            <div class="picture">
-                <img src="https://upenn.co1.qualtrics.com/ControlPanel/Graphic.php?IM=IM_WK7Ts5xiq213NwI" 
-                     alt="Overview of priming" width="1000" height="400">
-            </div>
 
             <h2>Overview of Stimuli Pool</h2>
+            <div class = "picture_container">
+              <img src="/assets/add_item.gif" id = "small_picture"/>
+            </div>
             <p>
                 This is where you put the same type of stimuli in. You can click <b>"Add Item"</b> to populate each of your stimuli pool. 
                 You can also click the little <b>"+"</b> on the top of the stimuli pool box to add more stimuli pools. 
@@ -47,6 +45,9 @@
             </p>
 
             <h2>Type / Image URL or Text Context / Count </h2>
+            <div class = "picture_container">
+              <img src="/assets/image_text.gif" id = "small_picture"/>
+            </div>
             <p>
                 This is where you need to select the type of your stimuli, whether it is an image or text.
                 If it is text, just copy and paste the text stimuli. 
@@ -59,6 +60,9 @@
             </p>
 
             <h2>Shuffle / Restrict Max Repeat</h2>
+            <div class = "picture_container">
+              <img src="/assets/shuffle.gif" id = "small_picture"/>
+            </div>
             <p>
                 Here, the SP-Builder has a function called <b>“Shuffle”</b>that helps you randomize the order of all the items in your stimuli. 
                 Once you activate the “Shuffle” function, the SP-Builder will embed the JavaScript in your survey to generate a unique randomized order of items for each stimulus for each participant. 
@@ -72,6 +76,26 @@
 
             </p>
         </div>
+
+        <footer class="site-footer">
+            <p>
+              Contact Support:
+              <a href="mailto:spbuilder.team@gmail.com">spbuilder.team@gmail.com</a>
+            </p>
+          </footer>
     </div>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.menu ul li a');
+          menuLinks.forEach(link => {
+            // Compare the link's href with the current URL
+            if (link.href === window.location.href) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
 </body>
 </html>

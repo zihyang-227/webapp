@@ -15,7 +15,7 @@
         <!-- Left Menu Section -->
         <div class="menu">
             <ul>
-                <li><a href="index.html">Overview</a></li>
+                <li><a href="index.html" >Overview</a></li>
                 <li><a href="stimuli.html">Set Your Stimuli Pool</a></li>
                 <li><a href="priming.html">Priming</a></li>
                 <li><a href="trial.html">Design Your Trial Flow</a></li>
@@ -57,6 +57,31 @@
                 The resulting name is formed as a combination of the stimulus number and the named selected item 
             </p>
         </div>
+
+        <footer class="site-footer">
+            <p>
+              Contact Support:
+              <a href="mailto:spbuilder.team@gmail.com">spbuilder.team@gmail.com</a>
+            </p>
+          </footer>
     </div>
+
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const menuLinks = document.querySelectorAll('.menu ul li a');
+          menuLinks.forEach(link => {
+            // Compare the link's href with the current URL
+            if (link.href === window.location.href) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
+      
 </body>
 </html>
+  
+
+
