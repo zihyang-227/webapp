@@ -89,6 +89,7 @@ html, body {
 .content {
     width: 85%;
     padding: 20px;
+    padding-bottom: 60px;
     overflow-y: auto;
 }
 
@@ -134,31 +135,58 @@ hr {
 
 
 
-/* Footer styling */
 .site-footer {
-    background-color: #f2f2f2;   /* Light background */
-    text-align: center;          /* Centered text */
-    padding: 10px 20px;          /* Padding for spacing */
-    position: fixed;             /* Fixes the footer to the bottom */
-    left: 0;
+    position: fixed;
     bottom: 0;
-    width: 100%;                 /* Full width */
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-  }
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content {
+    padding-bottom: 60px; /* Adds space equal to or greater than the footer height */
+}
+
+
+
   
-  .site-footer p {
+.site-footer p {
     margin: 0;
     font-size: 0.9em;
     color: #333;
-  }
+}
   
-  .site-footer a {
+.site-footer a {
     color: #e52521;              /* Customize link color */
     text-decoration: none;
-  }
+}
   
-  .site-footer a:hover {
+.site-footer a:hover {
     text-decoration: underline;
-  }
+}
+
+/* Hide expandable content by default */
+.expandable-content {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+
+/* Cursor style to indicate clickable text */
+.expandable-title {
+    cursor: pointer;
+    color: rgb(13, 68, 120);
+    font-family: Arial;
+    font-size: 16px; /* Highlight color */
+    margin-bottom: 15px; 
+    margin-top: 15px; 
+    line-height: 3; 
+}
+
+.expandable-title:hover {
+    text-decoration: underline;
+}
   
 
