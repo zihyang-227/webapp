@@ -14,7 +14,7 @@ html, body {
 .logo-header {
     height: 5vh;
     width: 100%;
-    background-color: #7bc0e3;
+    background-color: #43a5e2;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -53,7 +53,7 @@ html, body {
 /* Menu Section (15% width) */
 .menu {
     width: 15%;
-    background-color: #43a5e2;
+    background-color: #7bc0e3;
     padding: 20px;
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -75,13 +75,13 @@ html, body {
 }
 
 .menu ul li a:hover {
-    color: #e5b421;
+    color: #e59021;
 }
 
 /* Persistent active state styling */
 .menu ul li a.active {
-    border-bottom: 3px solid #e5b421;
-    color: #e5b421;
+    border-bottom: 3px solid #e59021;
+    color: #e59021;
   }
 
 
