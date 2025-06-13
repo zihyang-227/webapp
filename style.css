@@ -1,0 +1,212 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section (5% of height) */
+.logo-header {
+    height: 5vh;
+    width: 100%;
+    background-color: #43a5e2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;   
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.picture_container{
+    display:flex;
+    text-align:center;
+    justify-content: center;
+}
+
+#small_picture{
+    width:800px;
+    height:300px;
+
+}
+
+
+#small_picture_2{
+    width:600px;
+    height:350px;
+
+}
+
+/* Main Container Layout (95% of height below logo) */
+.main-container {
+    display: flex;
+    height: 95vh;
+}
+
+/* Menu Section (15% width) */
+.menu {
+    width: 15%;
+    background-color: #7bc0e3;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #e59021;
+}
+
+/* Persistent active state styling */
+.menu ul li a.active {
+    border-bottom: 3px solid #e59021;
+    color: #e59021;
+  }
+
+
+/* Content Section (85% width) */
+.content {
+    width: 85%;
+    padding: 20px;
+    padding-bottom: 60px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.6;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content {
+    padding-bottom: 60px; /* Adds space equal to or greater than the footer height */
+}
+
+
+
+  
+.site-footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+}
+  
+.site-footer a {
+    color: #e52521;              /* Customize link color */
+    text-decoration: none;
+}
+  
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hide expandable content by default */
+.expandable-content {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+
+/* Cursor style to indicate clickable text */
+.expandable-title {
+    cursor: pointer;
+    color: rgb(13, 68, 120);
+    font-family: Arial;
+    font-size: 16px; /* Highlight color */
+    margin-bottom: 15px; 
+    margin-top: 15px; 
+    line-height: 3; 
+}
+
+.expandable-title:hover {
+    text-decoration: underline;
+}
+  
+.expand-collapse-controls {
+  margin: 12px 0;
+}
+
+.expand-collapse-controls button {
+  background-color: #248dc2; /* Bootstrap-style blue */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.expand-collapse-controls button:hover {
+  background-color: #0056b3;
+}
+
+
